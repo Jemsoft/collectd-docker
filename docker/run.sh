@@ -2,9 +2,9 @@
 
 set -e
 
-if [ -n "${MESOS_HOST}" ]; then
+if [ -n "${HOSTNAME}" ]; then
   if [ -z "${COLLECTD_HOST}" ]; then
-    export COLLECTD_HOST="${MESOS_HOST}"
+    export COLLECTD_HOST="${HOSTNAME}"
   fi
 fi
 
